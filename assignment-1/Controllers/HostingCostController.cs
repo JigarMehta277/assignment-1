@@ -12,7 +12,6 @@ namespace assignment_1.Controllers
     /// <example>GET api/HostingCost</example>
     /// </summary>
     /// <returns>"1 fortnights at $" + amount + "/FN = $" + total1 + "CAD, HST 13 %=" + HSTprice + "CAD, Total = $" + total2</returns>
-    /// change
     public class HostingCostController : ApiController
     {
         public String Get(int id)
