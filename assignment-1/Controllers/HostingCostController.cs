@@ -23,16 +23,16 @@ namespace assignment_1.Controllers
             double total2;
             double HSTprice;
 
-            int ans = id / night;
-            if(ans==0)
+            int div = id / night;
+            if(div==0)
             {
-                ans = 1;
+                div = 1;
             }
             else
             {
-                ans = ans + 1;
+                div = div + 1;
             }
-            total1 = amount * ans;
+            total1 = amount * div;
             HSTprice = total1 * (HST / 100);
             total2 = total1 + HSTprice;
             return "1 fortnights at $" + amount + "/FN = $" + total1 + "CAD, HST 13 %=" + HSTprice + "CAD, Total = $" + total2;
